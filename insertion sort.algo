@@ -1,0 +1,19 @@
+ALGORITHM Insertion sert
+VAR
+   i,j,current:INTEGER;
+   arr:=ARRAY_OF INTEGER[];
+
+BEGIN
+    FOR(i=1,i<array.length,i++){
+        current:=arr[i]
+        j=i-1
+        WHILE (j>=0 and arr[j]>current) DO {
+            arr[j+1]=arr[j]
+            j=j-1
+        }
+        arr[j+1]=current
+        
+        END_WHILE
+        END_FOR
+    }
+END
